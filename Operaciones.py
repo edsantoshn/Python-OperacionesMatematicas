@@ -1,3 +1,13 @@
+#!/usr/bin/python36
+__author__ = "Edu Santos PAZ"
+__copyright__ = "Copyright 2017"
+__credits__ = ["Emanuel Mendez", "Oscar Luis Sanchez"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Edu Santos PAZ"
+__email__ = "eduardo@edsantoshn.com"
+__status__ = "Development"
+
 import math
 class OperacionesMatematicas:
 	"""El nombre de la clase es OperacionesMatematicas el nombre del archivo es Operaciones.py al momento de la herencia utilizaremos la siguiente momenclatura
