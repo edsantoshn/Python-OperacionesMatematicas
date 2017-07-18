@@ -16,6 +16,8 @@ class OperacionesMatematicas:
 		print("Bienvenid@ al Paquete de Herramientas Matematicas")
 
 	def fibonacci(self,n):
+		"""Realiza N veces el ciclo del algoritmo de fibonacci para encontrar la respuesta al ciclo, 
+		Al inicio se utilizaba para obtener la cantidad de parejas de conejos se obtendria al año si iniciabamos con 1 pareja"""
 		a=1
 		b=0
 		for i in range(n-1):
@@ -47,27 +49,27 @@ class OperacionesMatematicas:
 	def par_impar(self,numero):
 		"""Verifica si un numero es par o impar y retonar un mensaje con el resultado"""
 		if(numero%2==0):
-			return("El numero {0} es par".format(numero))
+			return'El numero {0} es par'.format(numero)
 		else:
-			return("El numero {0} es impar".format(numero))
+			return'El numero {0} es impar'.format(numero)
 	
 	def numero(self,numero1,numero2,numero3):
 		"""Verifica si un numero es la suma de los otros dos, de ser asi retorna un mensaje con el numero y cual es la suma."""
 		if(numero1==numero2+numero3):
-			return("El numero {0} es la suma de {1} y {2}".format(numero1,numero2,numero3))
+			return'El numero {0} es la suma de {1} y {2}'.format(numero1,numero2,numero3)
 		elif(numero2==numero3+numero1):
-			return("El numero {0} es la suma de {1} y {2}".format(numero2,numero3,numero1))
+			return'El numero {0} es la suma de {1} y {2}'.format(numero2,numero3,numero1)
 		elif(numero3==numero1+numero2):
-			return("El numero {0} es la suma de {1} y {2}".format(numero3,numero1,numero2))
+			return'El numero {0} es la suma de {1} y {2}'.format(numero3,numero1,numero2)
 		else:
-			return("Ningun numero es la suma de los otros dos")
+			return'Ningun numero es la suma de los otros dos'
 
-	def multimplodetres(self,numero):
+	def multiplodetres(self,numero):
 		"""Verifica si un numero es multiplo de tres de ser asi retorna el mensaje positivo caso contrario el mensaje negativo"""
 		if(numero%3==0):
-			return("El numero {0} es multiplo de tres".format(numero))
+			return'El numero {0} es multiplo de tres'.format(numero)
 		else:
-			return("El numero {0} no es multiplo de tres".format(numero))
+			return'El numero {0} no es multiplo de tres'.format(numero)
 
 	def factorizar(self,numero):
 		"""Factoriza el numero y retorna el resultado de la operacion"""
@@ -105,7 +107,7 @@ class OperacionesMatematicas:
 		elif(operacion.lower()=="multiplicacion"):
 			return numero_uno*numero_dos
 		else:
-			print "La operacion {0} no existe o no esta controlada".format(operacion)
+			print 'La operacion {0} no existe o no esta controlada'.format(operacion)
 			return False
 
 	def suma_cuadrada(self, numero_inicial, numero_final):
