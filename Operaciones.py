@@ -107,9 +107,8 @@ class OperacionesMatematicas:
 		elif(operacion.lower()=="multiplicacion"):
 			return numero_uno*numero_dos
 		else:
-			print 'La operacion {0} no existe o no esta controlada'.format(operacion)
-			return False
-
+			return'La operacion {0} no existe o no esta controlada'.format(operacion)
+			
 	def suma_cuadrada(self, numero_inicial, numero_final):
 		"""Realiza la suma cuadra desde el numero inicial hasta el numero final"""
 		suma=0
@@ -133,6 +132,5 @@ class OperacionesMatematicas:
 		elif(promedio>=90 or promedio <=100):
 			return "A"
 		else:
-			print("el promedio {0} esta fuera de rango de 0-100".format(promedio))
-			return False
-	
+			return'el promedio {0} esta fuera de rango de 0-100'.format(promedio)
+			
