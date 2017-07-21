@@ -30,7 +30,7 @@ class OperacionesMatematicas:
 		"""Expone la base y retorna el resultado de la operacion """
 		return(base**exponente)
 
-	def raizcuadrada(self,raiz):
+	def raiz_cuadrada(self,raiz):
 		"""Obtiene la raiz cuadra del numero y lo retorna"""
 		return math.sqrt(raiz)
 
@@ -64,7 +64,7 @@ class OperacionesMatematicas:
 		else:
 			return'Ningun numero es la suma de los otros dos'
 
-	def multiplodetres(self,numero):
+	def multiplo_de_tres(self,numero):
 		"""Verifica si un numero es multiplo de tres de ser asi retorna el mensaje positivo caso contrario el mensaje negativo"""
 		if(numero%3==0):
 			return'El numero {0} es multiplo de tres'.format(numero)
@@ -87,7 +87,7 @@ class OperacionesMatematicas:
 		"""Realiza una division simple"""
 		return numero_uno/numero_dos
 
-	def multiplicasion_simple(self, numero_uno, numero_dos):
+	def multiplicacion_simple(self, numero_uno, numero_dos):
 		"""Realiza una multiplicacion simple"""
 		return numero_uno*numero_dos
 
@@ -115,8 +115,6 @@ class OperacionesMatematicas:
 		for elemento in range(numero_inicial, numero_final):
 			suma+=(elemento*elemento)
 		return suma
-
-
 
 	def puntuacion_letras(self, calificacion_uno, calificacion_dos, calificacion_tres, calificacion_cuatro):
 		"""recibe las cuatro notas verifica si estan en el ragon de 0-100 y retorna la letra correspondiente"""
